@@ -48,7 +48,7 @@
             <div class="card border-primary rounded custom-shadow">
                 <img src="{{ product.image.url }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <a href="../goods/product.html">
+                    <a href="{% url "catalog:product" product.slug %}">
                         <p class="card-title">{{ product.name }}</p>
                     </a>
                     <p class="card-text text-truncate">{{ product.description }}</p>
