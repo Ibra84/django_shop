@@ -33,4 +33,13 @@ class Products(models.Model):
         return f"{self.name}. Количество - {self.quantity}"   
     
     
+    def display_id(self):
+        return f"{self.id:05}"
+    
+    def sell_price(self):
+        if self.discount:
+            return round (self.price - self.price*self.discount/100,2)
+        else:
+            return self.prices
+    
     
