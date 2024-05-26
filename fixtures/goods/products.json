@@ -1,1 +1,170 @@
-[{"model": "goods.products", "pk": 1, "fields": {"name": "Чайный столик и три стула", "slug": "chajnyj-stolik-i-tri-stula", "description": "Комплект из трёх стульев и дизайнерский столик для гостиной комнаты.", "image": "goods_images/set_of_tea_table_and_three_chairs.jpg", "price": "150.00", "discount": "0.00", "quantity": 10, "category": 5}}, {"model": "goods.products", "pk": 2, "fields": {"name": "Чайный столик и два стула", "slug": "chajnyj-stolik-i-dva-stula", "description": "Набор из стола и двух стульев в минималистическом стиле.", "image": "goods_images/set_of_tea_table_and_two_chairs.jpg", "price": "93.00", "discount": "0.00", "quantity": 10, "category": 5}}, {"model": "goods.products", "pk": 3, "fields": {"name": "Двухспальная кровать", "slug": "dvuhspalnaya-krovat", "description": "Кровать двухспальная с надголовником и вообще очень ортопедичная.", "image": "goods_images/double_bed.jpg", "price": "670.00", "discount": "30.00", "quantity": 10, "category": 6}}, {"model": "goods.products", "pk": 4, "fields": {"name": "Кухонный стол с раковиной", "slug": "kuhonnyj-stol-s-rakovinoj", "description": "Кухонный стол для обеда с встроенной раковиной и стульями.", "image": "goods_images/strange_table.jpg", "price": "365.00", "discount": "0.00", "quantity": 10, "category": 5}}, {"model": "goods.products", "pk": 5, "fields": {"name": "Кухонный стол с встройкой", "slug": "kuhonnyj-stol-s-vstrojkoj", "description": "Кухонный стол со встроенной плитой и раковиной. Много полок и вообще красивый.", "image": "goods_images/kitchen_table.jpg", "price": "430.00", "discount": "15.00", "quantity": 10, "category": 5}}, {"model": "goods.products", "pk": 6, "fields": {"name": "Угловой диван для гостинной", "slug": "uglovoj-divan-dlya-gostinnoj", "description": "Угловой диван, раскладывается в двухспальную кровать, для гостинной и приема гостей самое то!", "image": "goods_images/sofa.jpg", "price": "610.00", "discount": "20.00", "quantity": 10, "category": 7}}, {"model": "goods.products", "pk": 7, "fields": {"name": "Прикроватный столик", "slug": "prikrovatnyj-stolik", "description": "Прикроватный столик с двумя выдвижными ящиками (цветок не входит в комплект).", "image": "goods_images/bedside_table_TfeguEt.jpg", "price": "55.00", "discount": "2.00", "quantity": 10, "category": 6}}, {"model": "goods.products", "pk": 8, "fields": {"name": "Диван обыкновенный", "slug": "divan-obyknovennyj", "description": "Диван, он же софа обыкновенная, ничего примечательного для описания.", "image": "goods_images/corner_sofa.jpg", "price": "190.00", "discount": "7.00", "quantity": 10, "category": 7}}, {"model": "goods.products", "pk": 9, "fields": {"name": "Стул офисный", "slug": "stul-ofisnyj", "description": "Описание товара, про то какой он классный, но это стул, что тут сказать...", "image": "goods_images/office_chair.jpg", "price": "30.00", "discount": "5.00", "quantity": 10, "category": 8}}, {"model": "goods.products", "pk": 10, "fields": {"name": "Растение", "slug": "rastenie", "description": "Растение для украшения вашего интерьера подарит свежесть и безмятежность обстановке.", "image": "goods_images/plants.jpg", "price": "10.00", "discount": "0.00", "quantity": 10, "category": 10}}, {"model": "goods.products", "pk": 11, "fields": {"name": "Цветок стилизированный", "slug": "cvetok-stilizirovannyj", "description": "Дизайнерский цветок (возможно искусственный) для украшения интерьера", "image": "goods_images/flower.jpg", "price": "15.00", "discount": "0.00", "quantity": 10, "category": 10}}, {"model": "goods.products", "pk": 12, "fields": {"name": "Прикроватный столик 2", "slug": "prikrovatnyj-stolik-2", "description": "Столик, довольно странный на вид, но подходит для размещения рядом с кроватью.", "image": "goods_images/bedside_table.jpg", "price": "25.00", "discount": "10.00", "quantity": 10, "category": 6}}]
+[
+    {
+        "model": "goods.products",
+        "pk": 1,
+        "fields": {
+            "name": "Р§Р°Р№РЅС‹Р№ СЃС‚РѕР»РёРє Рё С‚СЂРё СЃС‚СѓР»Р°",
+            "slug": "chajnyj-stolik-i-tri-stula",
+            "description": "РРґРµР°Р»СЊРЅРѕ РґР»СЏ С‡Р°РµРїРёС‚РёСЏ РІ РјР°Р»РµРЅСЊРєРѕР№ РєСѓС…РЅРµ РёР»Рё РІ СЃР°РґСѓ РЅР°С‚ РѕС‚РєСЂС‹С‚РѕРј РІРѕР·РґСѓС…Рµ.",
+            "image": "goods_images/set_of_tea_table_and_three_chairs.jpg",
+            "price": "150.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2,
+        "fields": {
+            "name": "Р§Р°Р№РЅС‹Р№ СЃС‚РѕР»РёРє Рё РґРІР° СЃС‚СѓР»Р°",
+            "slug": "chajnyj-stolik-i-dva-stula",
+            "description": "РРґРµР°Р»СЊРЅРѕ РґР»СЏ РЅРµР±РѕР»СЊС€РѕР№ Р±РµСЃРµРґС‹ Р·Р° С‡Р°С€РєРѕР№ С‡Р°СЏ РІ СѓСЋС‚РЅРѕР№ РѕР±СЃС‚Р°РЅРѕРІРєРµ.",
+            "image": "goods_images/set_of_tea_table_and_two_chairs.jpg",
+            "price": "93.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 3,
+        "fields": {
+            "name": "Р”РІСѓС…СЃРїР°Р»СЊРЅР°СЏ РєСЂРѕРІР°С‚СЊ",
+            "slug": "dvuhspalnaya-krovat",
+            "description": "РљСЂРѕРІР°С‚СЊ СЃ РїСЂРѕС‡РЅРѕР№ РєРѕРЅСЃС‚СЂСѓРєС†РёРµР№ Рё РјСЏРіРєРёРј РёР·РіРѕР»РѕРІСЊРµРј РґР»СЏ РєРѕРјС„РѕСЂС‚РЅРѕРіРѕ СЃРЅР°.",
+            "image": "goods_images/double_bed.jpg",
+            "price": "670.00",
+            "discount": "30.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 4,
+        "fields": {
+            "name": "РљСѓС…РѕРЅРЅС‹Р№ СЃС‚РѕР» СЃ СЂР°РєРѕРІРёРЅРѕР№",
+            "slug": "kuhonnyj-stol-s-rakovinoj",
+            "description": "РџСЂР°РєС‚РёС‡РЅС‹Р№ СЃС‚РѕР» РґР»СЏ РєСѓС…РЅРё СЃ РІСЃС‚СЂРѕРµРЅРЅРѕР№ СЂР°РєРѕРІРёРЅРѕР№ Рё  РјРЅРѕР¶РµСЃС‚РІРѕРј С€РєР°С„С‡РёРєРѕРІ.",
+            "image": "goods_images/strange_table.jpg",
+            "price": "365.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 5,
+        "fields": {
+            "name": "РљСѓС…РѕРЅРЅС‹Р№ СЃС‚РѕР» СЃ РІСЃС‚СЂРѕР№РєРѕР№",
+            "slug": "kuhonnyj-stol-s-vstrojkoj",
+            "description": "РЎРѕРІСЂРµРјРµРЅРЅС‹Р№ СЃС‚РѕР» СЃ РІСЃС‚СЂР°РёРІР°РµРјРѕР№ С‚РµС…РЅРёРєРѕР№ Рё РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹РјРё РїРѕР»РєР°РјРё. РћС‚Р»РёС‡РЅРѕ РІРїРёС€РµС‚СЃСЏ РІ Р»СЋР±РѕР№ РёРЅС‚РµСЂСЊРµСЂ",
+            "image": "goods_images/kitchen_table.jpg",
+            "price": "430.00",
+            "discount": "15.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 6,
+        "fields": {
+            "name": "РЈРіР»РѕРІРѕР№ РґРёРІР°РЅ РґР»СЏ РіРѕСЃС‚РёРЅРѕР№",
+            "slug": "uglovoj-divan-dlya-gostinnoj",
+            "description": "Р‘РѕР»СЊС€РѕР№ РґРёРІР°РЅ, РїСЂРµРєСЂР°СЃРЅРѕ РїРѕРґС…РѕРґСЏС‰РёР№ РґР»СЏ РіРѕСЃС‚РёРЅРѕР№, РґР»СЏ СЃРѕР·РґР°РЅРёСЏ СѓСЋС‚РЅРѕР№ Р·РѕРЅС‹ РѕС‚РґС‹С…Р°",
+            "image": "goods_images/sofa.jpg",
+            "price": "610.00",
+            "discount": "20.00",
+            "quantity": 10,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 7,
+        "fields": {
+            "name": "РџСЂРёРєСЂРѕРІР°С‚РЅС‹Р№ СЃС‚РѕР»РёРє",
+            "slug": "prikrovatnyj-stolik",
+            "description": "РЈРґРѕР±РЅС‹Р№ СЃС‚РѕР»РёРє Сѓ РєСЂРѕРІР°С‚Рё РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РЅСѓР¶РЅС‹С… РјРµР»РѕС‡РµР№ (РїРѕРґРѕР№РґРµС‚ РґР»СЏ РєРЅРёРі Рё Р»Р°РјРїС‹).",
+            "image": "goods_images/bedside_table_TfeguEt.jpg",
+            "price": "55.00",
+            "discount": "2.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 8,
+        "fields": {
+            "name": "Р”РёРІР°РЅ РѕР±С‹РєРЅРѕРІРµРЅРЅС‹Р№",
+            "slug": "divan-obyknovennyj",
+            "description": "РџСЂРѕСЃС‚РѕР№, РЅРѕ РѕС‡РµРЅСЊ СѓРґРѕР±РЅС‹Р№ РґРёРІР°РЅ, РёРґРµР°Р»СЊРЅРѕ РїРѕРґС…РѕРґРёС‚ РґР»СЏ РіРѕСЃС‚РёРЅРѕР№.",
+            "image": "goods_images/corner_sofa.jpg",
+            "price": "190.00",
+            "discount": "7.00",
+            "quantity": 10,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 9,
+        "fields": {
+            "name": "РЎС‚СѓР» РѕС„РёСЃРЅС‹Р№",
+            "slug": "stul-ofisnyj",
+            "description": "РљРѕРјС„РѕСЂС‚РЅС‹Р№ СЃС‚СѓР», РєРѕС‚РѕСЂС‹Р№ РЅРµ С‚РѕР»СЊРєРѕ СЃС‚РёР»СЊРЅС‹Р№, РЅРѕ Рё СѓРґРѕР±РЅС‹Р№ РґР»СЏ СЂР°Р±РѕС‚С‹.",
+            "image": "goods_images/office_chair.jpg",
+            "price": "30.00",
+            "discount": "5.00",
+            "quantity": 10,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 10,
+        "fields": {
+            "name": "Р Р°СЃС‚РµРЅРёРµ",
+            "slug": "rastenie",
+            "description": "РСЃРєСѓСЃСЃС‚РІРµРЅРЅРѕРµ СЂР°СЃС‚РµРЅРёРµ, РєРѕС‚РѕСЂРѕРµ РґРѕР±Р°РІРёС‚ Р·РµР»РµРЅРё РІ РІР°С€ РёРЅС‚РµСЂСЊРµСЂ Рё СЃРѕР·РґР°СЃС‚ СѓСЋС‚РЅСѓСЋ Р°С‚РјРѕСЃС„РµСЂСѓ.",
+            "image": "goods_images/plants.jpg",
+            "price": "10.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 10
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 11,
+        "fields": {
+            "name": "Р¦РІРµС‚РѕРє СЃС‚РёР»РёР·РёСЂРѕРІР°РЅРЅС‹Р№",
+            "slug": "cvetok-stilizirovannyj",
+            "description": "РЎС‚РёР»РёР·РѕРІР°РЅРЅС‹Р№ С†РІРµС‚РѕРє (РёСЃРєСѓСЃСЃС‚РІРµРЅРЅС‹Р№) РґР»СЏ СѓРєСЂР°С€РµРЅРёСЏ РІР°С€РµРіРѕ РґРѕРјР°.",
+            "image": "goods_images/flower.jpg",
+            "price": "15.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 10
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 12,
+        "fields": {
+            "name": "РџСЂРёРєСЂРѕРІР°С‚РЅС‹Р№ СЃС‚РѕР»РёРє 2",
+            "slug": "prikrovatnyj-stolik-2",
+            "description": "РќРµР±РѕР»СЊС€РѕР№, РєРѕРјРїР°РєС‚РЅС‹Р№ СЃС‚РѕР»РёРє РґР»СЏ РєСЂРѕРІР°С‚Рё, РёРґРµР°Р»СЊРЅС‹Р№ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РєРЅРёРі Рё Р¶СѓСЂРЅР°Р»РѕРІ.",
+            "image": "goods_images/bedside_table.jpg",
+            "price": "25.00",
+            "discount": "10.00",
+            "quantity": 10,
+            "category": 6
+        }
+    }
+]
