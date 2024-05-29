@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load carts_tags %}
 
 {% block content %}
 <div class="row">
+    {% user_carts request as carts %}
     <div class="container mt-5">
         <div class="row">
             <!-- Профиль с данными пользователя -->
@@ -117,6 +119,7 @@
                 </div>
             </div>
             <!-- Корзина -->
+            {% user_carts request as carts %}
             <div class="col-md-7">
                 <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
                     <h3 class="text-center mb-4">Корзина</h3>
