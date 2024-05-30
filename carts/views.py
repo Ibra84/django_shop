@@ -1,4 +1,5 @@
-from django.shortcuts import redirect, render
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404, redirect, render
 
 from carts.models import Cart
 from goods.models import Products
@@ -21,8 +22,27 @@ def cart_add(request,product_slug):
 
 
 
-def cart_change(request,product_slug):
-    pass
+def cart_change(request, cart_id):
+    cart = get_object_or_404(Cart, id=cart_id, user=request.user)
+    
+    if request.method == 'POST':
+        action = request.GET.get('action')
+        
+        if action == 'increase':
+            cart.quantity += 1
+            cart.save()
+        elif action == 'decrease':
+            if cart.quantity > 1:
+                cart.quantity -= 1
+                cart.save()
+            else:
+                cart.delete()
+        else:
+            return JsonResponse({'error': 'Invalid action'}, status=400)
+        
+        return redirect(request.META.get('HTTP_REFERER', 'redirect_if_referer_not_found'))
+    
+    return redirect(request.META.get('HTTP_REFERER', 'redirect_if_referer_not_found'))
 
 
 
