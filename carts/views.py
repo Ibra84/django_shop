@@ -22,27 +22,18 @@ def cart_add(request,product_slug):
 
 
 
-def cart_change(request, cart_id):
-    cart = get_object_or_404(Cart, id=cart_id, user=request.user)
-    
+def cart_change(request, product_slug):
     if request.method == 'POST':
-        action = request.GET.get('action')
+        new_quantity_str = request.POST.get('quantity')
+        if new_quantity_str is not None:
+            new_quantity = int(new_quantity_str)
+            if not new_quantity == 0:
+                product = get_object_or_404(Products, slug=product_slug)
+                cart = get_object_or_404(Cart, user=request.user, product=product)
+                cart.quantity = new_quantity
+                cart.save()    
         
-        if action == 'increase':
-            cart.quantity += 1
-            cart.save()
-        elif action == 'decrease':
-            if cart.quantity > 1:
-                cart.quantity -= 1
-                cart.save()
-            else:
-                cart.delete()
-        else:
-            return JsonResponse({'error': 'Invalid action'}, status=400)
-        
-        return redirect(request.META.get('HTTP_REFERER', 'redirect_if_referer_not_found'))
-    
-    return redirect(request.META.get('HTTP_REFERER', 'redirect_if_referer_not_found'))
+    return redirect(request.META['HTTP_REFERER'])
 
 
 

@@ -18,18 +18,18 @@ def login(request):
                 auth.login(request, user)
                 messages.success(request, f"{username}, Вы вошли в аккаунт")
                 redirect_page = request.POST.get('next', None)
-                if redirect_page and redirect_page != reverse('user:logout'):  
-                    return HttpResponseRedirect(reverse('main:index'))
+                if redirect_page and redirect_page != reverse('user:logout'):
+                    return HttpResponseRedirect(redirect_page)
+                return HttpResponseRedirect(reverse('main:index'))
     else:
         form = UserLoginForm()        
     
-    
     context = {
         'title': 'Авторизация',
-        'form': form
+        'form': form,
+        'next': request.GET.get('next', '')  # передаем 'next' в контекст
     }
     return render(request, 'users/login.html', context=context)
-
 
 
 def registration(request):

@@ -17,20 +17,22 @@
                 <div class="col p-0">
                     <div class="input-group">
                         <span class="input-group-btn">
-                            <form method="post" action="{% url 'cart:cart_change' cart.id %}?action=decrease" style="display:inline;">
+                            <form method="post" action="{% url 'cart:cart_change' cart.product.slug %}" style="display:inline;">
                                 {% csrf_token %}
+                                <input type="hidden" name="quantity" value="{{ cart.quantity|add:"-1" }}">
                                 <button type="submit" class="btn btn-dark btn-sm">-</button>
                             </form>
                         </span>
                         <input type="text" class="form-control number" value="{{ cart.quantity }}" readonly>
                         <span class="input-group-btn">
-                            <form method="post" action="{% url 'cart:cart_change' cart.id %}?action=increase" style="display:inline;">
+                            <form method="post" action="{% url 'cart:cart_change' cart.product.slug %}" style="display:inline;">
                                 {% csrf_token %}
+                                <input type="hidden" name="quantity" value="{{ cart.quantity|add:"1" }}">
                                 <button type="submit" class="btn btn-dark btn-sm">+</button>
                             </form>
                         </span>
                     </div>
-                    
+                                      
                 </div>
                 <div class="col p-0">
                     <p>x {{cart.product.sell_price}} = </p>
