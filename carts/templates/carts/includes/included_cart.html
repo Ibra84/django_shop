@@ -49,9 +49,12 @@
     </ul>
     {% endfor %}
 </div>
-{% comment %} {% else %}
-<p>Пожалуйста войдите в систему, чтобы увидеть свою корзину</p>
-{% endif %} {% endcomment %}
+
+{% if not user.is_authenticated %}
+<p>Пожалуйста <a href="{% url "user:login" %}"> войдите</a> в систему, чтобы увидеть свою корзину</p>
+{% endif %}
+
+
 
 <div class="card mb-3 shadow-lg">
     <div class="card-footer">
